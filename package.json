@@ -1,0 +1,24 @@
+{
+  "name": "react-skeleton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ada --port 2018 --noRem --dist=docs --config=webpack.conf.js",
+    "build": "ada build --noRem --dist=docs --config=webpack.conf.js;BABEL_DISABLE_CACHE=1 node src/skeleton/build.js",
+    "test": "npm run build; hs -p 2018"
+  },
+  "keywords": [],
+  "author": "ccbikai <ccbikai@qq.com> (http://miantiao.me/)",
+  "license": "MIT",
+  "devDependencies": {
+    "ada": "^1.1.2",
+    "babel-plugin-transform-css-import-to-string": "0.0.2",
+    "babel-register": "^6.26.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.11.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  }
+}
