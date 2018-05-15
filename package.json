@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ada --port 2018 --noRem --dist=docs --config=webpack.conf.js",
-    "build": "ada build --noRem --dist=docs --config=webpack.conf.js;BABEL_DISABLE_CACHE=1 node src/skeleton/build.js",
+    "build": "ada build --noRem --dist=docs --publicPath='./' --config=webpack.conf.js;BABEL_DISABLE_CACHE=1 node src/skeleton/build.js",
     "test": "npm run build; hs -p 2018"
   },
   "keywords": [],
